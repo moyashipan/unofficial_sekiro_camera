@@ -31,7 +31,6 @@
 
     #overlay {
       position: absolute;
-      z-index: 10;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%,-50%);
@@ -45,11 +44,11 @@
 </head>
 <body>
   <div id="main-container">
-    <img id="overlay" src='death.png'>
-    <canvas id="canvas"></canvas>
     <div id="videobox">
       <video id="video" autoplay playsinline></video>
     </div>
+    <canvas id="canvas"></canvas>
+    <img id="overlay" src='death.png'>
   </div>
   <script src="index.js"></script>
 </body>
