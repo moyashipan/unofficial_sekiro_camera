@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Thanks for https://github.com/kimizuka/webcamera-preview-for-ios11 -->
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>SEKIRO CAMERA UNOFFICIAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <link rel="stylesheet" href="index.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <style>
+    body {
+      margin: 0;
+    }
+    #videobox {
+      position: absolute;
+      top: 10px; left: 10px;
+      transform-origin: left top;
+      transform: scale(.1);
+    }
+
+    #video {
+      display: block;
+      visibility: hidden;
+    }
+
+    #canvas {
+      display: block;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+    }
+
+    #overlay {
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+    }
+  </style>
+</head>
+<body>
+  <div id="main-container">
+    <div id="overlay">
+      <img id="text" src='death.png'>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div id="videobox">
+      <video id="video" autoplay playsinline></video>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
